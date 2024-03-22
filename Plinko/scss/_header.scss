@@ -1,0 +1,100 @@
+/* Smartphones (portrait and landscape) ----------- */
+.header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: #9197ae;
+    width: 100%;
+
+}
+.header-logo{ 
+    height: 45px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+    .header-list{
+        width: 50%;
+        display: none;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        text-align: center;
+        white-space: nowrap;
+        }
+        .header-list__links {
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            color: white;
+            a {
+                display: block;
+                padding: 5px;
+                color: white;
+                &:visited{
+                    color: white;
+                }
+                &:active {
+                    color: white;
+                }
+            }
+            &:hover {
+            background-color: #A80064;
+            }  
+        } 
+
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: #9197ae;
+    width: 100%;
+}
+.header-list{
+    display: flex;
+    }
+}
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+    /* Styles */
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        background-color: #9197ae;
+        width: 100%;
+    
+    }
+    .header{
+        justify-content: space-around;
+    }
+    .header-list{
+        display: flex;
+    }
+
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
